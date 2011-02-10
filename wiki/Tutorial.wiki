@@ -44,3 +44,7 @@ If your operating system is Windows based, you may start directly by double clic
 <img src="http://jsh.googlecode.com/files/jsh_hta.png" /><br>
 
 = Advanced Topic =
+
+=== Run in Windows console ===
+If your operating system is Windows based, you can run *JSH.js* in console using {{{cscript.exe /nologo}}}.<br>
+<img src="http://jsh.googlecode.com/files/jsh_hta.png" /><br>
