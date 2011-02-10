@@ -41,6 +41,6 @@ If you are running locally and using Internet Explorer, the browser may show an 
 
 === Run in Windows HTA ===
 If your operating system is Windows based, you may start directly by double clicking the *JSH.hta* file icon, this would bring you an HTA based shell.
-<img src="/files/jsh_hta.png" /><br>
+<img src="http://jsh.googlecode.com/files/jsh_hta.png" /><br>
 
 = Details =
