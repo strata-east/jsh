@@ -19,7 +19,7 @@ UTF16.js        (UTF16 encoding and decoding, with BOM BE/LE support)
 }}}
 
 = JSH Runtime =
-=== __builtins__ ===
+=== `__builtins__` ===
 All JSH related data are kept in the *{{{__builtins__}}}* global variable.<br>
 When running in interactive mode, an additional global variable named *{{{_}}}* is maintained, which always holds the last successful evaluation result.
 *{{{__builtins__.Engine}}}* _string_<br>
