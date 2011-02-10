@@ -1,9 +1,9 @@
 = Folder Organization =
 {{{
-jsh (base folder)
-├─bin (libraries for specific platform)
-├─cxx (used by script injection)
-└─lib (folder for platform independent libraries, each library can be used alone)
+jsh             (base folder)
+├─bin           (libraries for specific platform)
+├─cxx           (used by script injection)
+└─lib           (folder for platform independent libraries, each library can be used alone)
 }}}
 
 = Library Organization =
