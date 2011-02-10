@@ -26,3 +26,9 @@ When running in interactive mode, an additional global variable named *{{{_}}}* 
 *{{{__builtins__.Terminate()}}}* _function_<br>
 
 = Library API =
+=== Tartarus ===
+*{{{chainload}}}*<br>
+*{{{load}}}*<br>
+*{{{print}}}*<br>
+
+=== Prelude ===
