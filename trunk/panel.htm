@@ -1,0 +1,94 @@
+<html>
+<head>
+<title></title>
+<script src="./lib/Tartarus.js" type="text/javascript"></script>
+<style type="text/css">
+A {color: rgb(0,0,255); cursor: pointer; text-decoration: underline}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+Tartarus.load(
+	'./lib/Prelude.js',
+	'./lib/Intermezzo.js',
+	'./lib/URI.js',
+function(){
+	Prelude.map(function(v){
+		Intermezzo.AppendNode(document.body,
+			['NOBR', null,
+				['A', function(elem){
+					if(v[1] instanceof Function)
+						Intermezzo.AddEventListener(elem, 'click', v[1]);
+					else
+						elem.href = URI.NormalizeURI(v[1], URI.GetCurrentURI());
+					elem.target = 'frame1';
+					elem.onmouseover = function(){this.style.fontWeight = 'bold';};
+					elem.onmouseout = function(){this.style.fontWeight = 'normal';};
+				}, v[0]]
+			],
+			['BR']);
+	}, Prelude.alist({
+		'Welcome': function(evt){
+			var banner = evt.target.firstChild.nodeValue.split(' ');
+			evt.target.firstChild.nodeValue = banner.length === 1 ? Prelude.list(banner[0]).join(' ') : Prelude.filter(null, banner).join('');
+		},
+		'Blank Page (about:blank)': 'about:blank',
+		'Blank Page (HTML quirks)': 'Blank_HTML.htm',
+		'Blank Page (HTML 4.01 strict)': 'Blank_HTML4.htm',
+		'List Test': function(){
+			Intermezzo.AppendNode(window.parent.frames[this.target].document.body,
+				['H3', null, 'Unordered lists (UL), ordered lists (OL), and list items (LI)'],
+				['UL', null,
+					['LI', null, 'Level 1, number 1'],
+					['LI', null, 'Level 1, number 2'],
+					['LI', null, 'Level 1, number 3']],
+				['OL', null,
+					['LI', null, 'Level 1, number 1'],
+					['LI', null, 'Level 1, number 2'],
+					['LI', null, 'Level 1, number 3']],
+				['H3', null, 'Definition lists: DL, DT and DD'],
+				['DL', null,
+					['DT', null, 'Dweeb'],
+					['DD', null,
+						'young excitable person who may mature into a ',
+						['EM', null, 'Nerd'],
+						' or ',
+						['EM', null, 'Geek']],
+					['DT', null, 'Hacker'],
+					['DD', null, 'a clever programmer'],
+					['DT', null, 'Nerd'],
+					['DD', null, 'technically bright but socially inept person'],
+					['DT', null, 'Center'],
+					['DT', null, 'Centre'],
+					['DD', null, 'A point equidistant from all points on the surface of a sphere.'],
+					['DD', null, 'In some field sports, the player who holds the middle position on the field, court, or forward line.']]
+			);
+		},
+		'Needle (script injection)': function(){
+			Intermezzo.AppendNode(
+				window.parent.frames[this.target].document.getElementsByTagName('HEAD')[0],
+				['SCRIPT', {src: URI.NormalizeURI('./cxx/resource.js', URI.GetCurrentURI()), type: 'text/javascript'}]
+			);
+		},
+		'Needle (bookmark)': 'javascript:' + encodeURIComponent(Prelude.format(
+			'(function(p){var n=document.createElement("SCRIPT");n.type="text/javascript";n.src=p;document.getElementsByTagName("HEAD")[0].appendChild(n);})(%r)',
+			URI.NormalizeURI('./cxx/resource.js', URI.GetCurrentURI()))),
+		'Runtime Library': function(){
+			Prelude.comp(Prelude.curry(
+				Intermezzo.AppendNode,
+				window.parent.frames[this.target].document.getElementsByTagName('HEAD')[0]
+			))(Prelude.map(function(x){
+					return ['SCRIPT', {src: URI.NormalizeURI(x, URI.GetCurrentURI()), type: 'text/javascript'}];
+				}, [
+					'./lib/Tartarus.js',
+					'./lib/Prelude.js',
+					'./lib/Intermezzo.js',
+					'./lib/URI.js',
+					'./JSH.js'
+			]));
+		}
+	}));
+});
+</script>
+</body>
+</html>
