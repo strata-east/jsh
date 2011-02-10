@@ -76,7 +76,7 @@ You may also run *{{{JSH.hta hello.js a b c}}}* to see the result in HTA window.
 
 === Windows console stdin/stdout redirection ===
 If you are facing problems while trying to use JSH for stdin/stdout redirection, consult this link [http://support.microsoft.com/kb/321788].<br>
-For example, if we want to create a script for automating HTTP request
+For example, if we want to create a script for automating HTTP request, we can create a script named HttpClient.js
 {{{
 Tartarus.load(
 	__builtins__.Runtime('lib/Intermezzo.js'),
@@ -99,3 +99,4 @@ function(){
 	Tartarus.print(xmlHttpReq.responseText);
 });
 }}}
+Then it is possible to use *{{{JSH.js HttpClient.js POST http://google.com < postdata.txt}}}*
