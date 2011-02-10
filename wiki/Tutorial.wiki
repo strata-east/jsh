@@ -1,6 +1,6 @@
 = Introduction =
 
-Download the jsh.7z package and unpack, and you will see the following directory structure.
+Download the *jsh.7z* package and unpack, and you will see the following directory structure.
 {{{
 jsh
 │ JSH.js
@@ -36,7 +36,7 @@ Now there are three panels, click the *Runtime Library* link, which is the last 
 <br>
 <img src="http://jsh.googlecode.com/files/tutorial1.png" /><br>
 *Needle (bookmark)* can be saved as a bookmark and used on other web pages, this is done by injecting javascript code to current web page. Note that when *index.htm* is opened locally, *Needle (bookmark)* may not work due to browser security policy.<br>
-If you are using latter version of Internet Explorer, the browser may show an information bar asking if the active content should be executed.<br>
+If you are running locally and using latter version of Internet Explorer, the browser may show an information bar asking if the active content should be executed.<br>
 
 === Run in Windows HTA ===
 If your operating system is Windows based, you may start directly by double clicking the *JSH.hta* file icon, this would bring you a HTA based shell.
