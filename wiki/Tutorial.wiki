@@ -55,4 +55,5 @@ In order to run *JSH.js* without having to type *cscript.exe /nologo* each time,
 wscript.exe //H:CScript
 }}}
 This would allow you to run *JSH.js* directly either by double clicking the JSH.js file icon, or by typing {{{JSH.js}}} directly as illustrated below.<br>
+(if you are too lazy to type in the *.js*, you may add *.js* to the PATHEXT environment variable, then you just need to type the three letter *JSH*...)
 <img src="http://jsh.googlecode.com/files/jsh_win32console.png" /><br>
