@@ -1,0 +1,17 @@
+/*
+can be accessed via res://D:\WWW\cxx\main.exe/10/HTML
+*/
+
+#if defined RC_INVOKED
+"HTML" RCDATA {
+	"<html>" "\n"
+	"<head>" "\n"
+	"<title></title>" "\n"
+	"</head>" "\n"
+	"<body>" "\n"
+	"<script src=""./JAVASCRIPT"" type=""text/javascript""></script>" "\n"
+	"</body>" "\n"
+	"</html>" "\n"
+}
+"JAVASCRIPT" RCDATA "resource.js"
+#endif
