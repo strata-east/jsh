@@ -58,6 +58,19 @@ This would allow you to run *JSH.js* directly either by double clicking the JSH.
 
 = Advanced Topic =
 
-=== Take arguments ===
+=== Script injection ===
+
+=== Taking arguments (Windows HTA and console) ===
+Create a file named _hello.js_ as follows
+{{{
+var print = Tartarus.print;
+
+print("Hello, world!");
+print(Prelude.format('Arguments: %r', __builtins__.Environment.Arguments));
+print(Prelude.format('LibraryPath: %s', __builtins__.Environment.LibraryPath));
+print(Prelude.format('StartupDirectory: %s', __builtins__.Environment.StartupDirectory));
+}}}
+Then run {{{JSH.js hello.js a b c}}} under command prompt to see the result.<br>
+You may also run {{{JSH.hta hello.js a b c}}} to see the result in HTA window.<br>
 
 === Windows console stdin/stdout redirection ===
