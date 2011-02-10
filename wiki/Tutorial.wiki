@@ -36,7 +36,7 @@ Once you are done, you will see something similar as illustrated below.<br>
 Now there are three panels, click the *Runtime Library* link, which is the last item in the left panel, and you will see a prompt at the right panel as illustrated, now you can type in javascript expressions and statements and see the result.<br>
 <br>
 <img src="http://jsh.googlecode.com/files/tutorial1.png" /><br>
-*Needle (bookmark)* can be saved as a bookmark and used on other web pages, this is done by injecting javascript code to current web page. Note that when *index.htm* is opened locally, *Needle (bookmark)* may not work due to browser security policy.<br>
+*Needle (bookmark)* can be saved as a bookmark and used on other web pages, this is done by injecting javascript code to current web page. Note that when _index.htm_ is opened locally, _Needle (bookmark)_ may not work due to browser security policy.<br>
 If you are running locally and using Internet Explorer, the browser may show an information bar asking if the active content should be executed depending on your browser security policy.<br>
 
 === Run in Windows HTA ===
@@ -48,12 +48,12 @@ If your operating system is Windows based, you can run *JSH.js* in console using
 {{{
 cscript.exe /nologo D:\WWW\JSH.js
 }}}
-In order to run *JSH.js* without having to type *cscript.exe /nologo* each time, you can change the default scripting host by the following command:
+In order to run _JSH.js_ without having to type _cscript.exe /nologo_ each time, you can change the default scripting host by the following command:
 {{{
 wscript.exe //H:CScript
 }}}
-This would allow you to run *JSH.js* directly either by double clicking the JSH.js file icon, or by typing {{{JSH.js}}} directly as illustrated below.<br>
-(if you are too lazy to type in the *.js*, you may add *.js* to the PATHEXT environment variable, then you just need to type the three letter *JSH*...)
+This would allow you to run _JSH.js_ directly either by double clicking the JSH.js file icon, or by typing {{{JSH.js}}} directly as illustrated below.<br>
+(if you are too lazy to type in the *.js*, you may add _.js_ to the PATHEXT environment variable, then you just need to type the three letter *JSH*...)
 <img src="http://jsh.googlecode.com/files/jsh_win32console.png" /><br>
 
 = Advanced Topic =
@@ -76,7 +76,7 @@ You may also run *{{{JSH.hta hello.js a b c}}}* to see the result in HTA window.
 
 === Windows console stdin/stdout redirection ===
 If you are facing problems while trying to use JSH for stdin/stdout redirection, consult this link [http://support.microsoft.com/kb/321788].<br>
-For example, if we want to create a script for automating HTTP request, we can create a script named HttpClient.js
+For example, if we want to create a script for automating HTTP request, we can create a script named _HttpClient.js_
 {{{
 Tartarus.load(
 	__builtins__.Runtime('lib/Intermezzo.js'),
