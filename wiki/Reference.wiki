@@ -28,6 +28,11 @@ All JSH related data are kept in the *`__builtins__`* global variable.<br>
 === `_` (underscore) ===
 When running in interactive mode, an additional global variable named *`_`* _(a single underscore)_ is maintained, which always holds the last successful evaluation result.
 
+=== `.` commands ===
+These are also known as meta commands.<br>
+*{{{.history}}}*<br>
+*{{{.wrap}}}*
+
 = Library API =
 === Tartarus ===
 *{{{chainload}}}*<br>
