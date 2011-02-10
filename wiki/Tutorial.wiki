@@ -59,7 +59,9 @@ This would allow you to run _JSH.js_ directly either by double clicking the JSH.
 = Advanced Topic =
 
 === Script injection ===
-TODO
+Script injection can be achieved in two ways.<br>
+The first way is to deploy *jsh* on a web server, bookmark the *Needle (bookmark)* and run it on targeted web pages.<br>
+The second way is only available for Trident on Windows platform, by using the *main.exe* application (C++ source available), this would give you the ability to inject script to Trident engine based applications, such like Windows SDK Help, MSN Live Messenger, Outlook Express, etc.<br>
 
 === Taking arguments (Windows HTA and console) ===
 Create a file named _hello.js_ as follows
