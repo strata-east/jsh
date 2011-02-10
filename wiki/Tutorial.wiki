@@ -1,0 +1,37 @@
+= Introduction =
+
+
+= Details =
+
+Download the jsh.7z package and unpack, and you will see the following directory structure.
+{{{
+jsh
+│ JSH.js
+│ JSH.hta
+│ index.htm
+│ panel.htm
+│ Blank_HTML.htm
+│ Blank_HTML4.htm
+├─bin
+│   System.js
+│   WebAutomation.js
+├─cxx
+│   main.cpp
+│   main.exe
+│   makefile
+│   resource.js
+│   resources.rc
+└─lib
+    Base64.js
+    Intermezzo.js
+    LZW.js
+    Prelude.js
+    Tartarus.js
+    URI.js
+    UTF16.js
+    UTF8.js
+}}}
+
+Open *index.htm* in your favorite browser and play with it, you may also deploy the entire *jsh* folder to a web server.
+
+If your operating system is Windows based, you may start directly by double clicking the *JSH.hta* file icon, this would bring you a HTA based shell.
