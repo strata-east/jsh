@@ -20,11 +20,13 @@ UTF16.js        (UTF16 encoding and decoding, with BOM BE/LE support)
 
 = JSH Runtime =
 === `__builtins__` ===
-All JSH related data are kept in the *{{{__builtins__}}}* global variable.<br>
-When running in interactive mode, an additional global variable named *{{{_}}}* is maintained, which always holds the last successful evaluation result.
+All JSH related data are kept in the *`__builtins__`* global variable.<br>
 *{{{__builtins__.Engine}}}* _string_<br>
 *{{{__builtins__.Environment}}}* _object_<br>
 *{{{__builtins__.Terminate()}}}* _function_<br>
+
+=== `_` (underscore) ===
+When running in interactive mode, an additional global variable named *`_`* _(a single underscore)_ is maintained, which always holds the last successful evaluation result.
 
 = Library API =
 === Tartarus ===
