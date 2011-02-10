@@ -58,4 +58,6 @@ This would allow you to run *JSH.js* directly either by double clicking the JSH.
 
 = Advanced Topic =
 
+=== Take arguments ===
+
 === Windows console stdin/stdout redirection ===
