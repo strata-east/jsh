@@ -29,7 +29,7 @@ All JSH related data are kept in the *`__builtins__`* global variable.<br>
 When running in interactive mode, an additional global variable named *`_`* _(a single underscore)_ is maintained, which always holds the last successful evaluation result.
 
 === `.` commands ===
-These are also known as meta commands.<br>
+These are also known as meta commands, available when running interactively in browser and HTA.<br>
 *{{{.history}}}*<br>
 *{{{.wrap}}}*
 
