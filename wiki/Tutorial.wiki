@@ -59,6 +59,7 @@ This would allow you to run *JSH.js* directly either by double clicking the JSH.
 = Advanced Topic =
 
 === Script injection ===
+TODO
 
 === Taking arguments (Windows HTA and console) ===
 Create a file named _hello.js_ as follows
@@ -74,3 +75,4 @@ Then run *{{{JSH.js hello.js a b c}}}* under command prompt to see the result.<b
 You may also run *{{{JSH.hta hello.js a b c}}}* to see the result in HTA window.<br>
 
 === Windows console stdin/stdout redirection ===
+[http://support.microsoft.com/kb/321788]
