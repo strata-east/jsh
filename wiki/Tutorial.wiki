@@ -71,6 +71,6 @@ print(Prelude.format('LibraryPath: %s', __builtins__.Environment.LibraryPath));
 print(Prelude.format('StartupDirectory: %s', __builtins__.Environment.StartupDirectory));
 }}}
 Then run {{{JSH.js hello.js a b c}}} under command prompt to see the result.<br>
-You may also run {{{JSH.hta hello.js a b c}}} to see the result in HTA window.<br>
+You may also run *{{{JSH.hta hello.js a b c}}}* to see the result in HTA window.<br>
 
 === Windows console stdin/stdout redirection ===
