@@ -1,6 +1,22 @@
 = Folder Organization =
+{{{
+jsh (base folder)
+├─bin (libraries for specific platform)
+├─cxx (used by script injection)
+└─lib (folder for platform independent libraries, each library can be used alone)
+}}}
 
 = Library Organization =
+{{{
+Tartarus.js     (load other libraries, print messages)
+Prelude.js      (fundamental algorithm, data structure and exception)
+Intermezzo.js   (utility for web browser and DOM)
+URI.js          (URI parsing and normalization)
+Base64.js       (Base64 encoding and decoding)
+LZW.js          (LZW compression and decompression)
+UTF8.js         (UTF8 encoding and decoding)
+UTF16.js        (UTF16 encoding and decoding, with BOM BE/LE support)
+}}}
 
 = JSH Runtime =
 All JSH related data are kept in the *{{{__builtins__}}}* global variable.<br>
