@@ -44,7 +44,7 @@ If your operating system is Windows based, you may start directly by double clic
 <img src="http://jsh.googlecode.com/files/jsh_hta.png" /><br>
 
 === Run in Windows console ===
-If your operating system is Windows based, you can run *JSH.js* in console using *cscript.exe /nologo <JSH.js file path>*, for example:
+If your operating system is Windows based, you can run *JSH.js* in console using *{{{cscript.exe /nologo <JSH.js file path>}}}*, for example:
 {{{
 cscript.exe /nologo D:\WWW\JSH.js
 }}}
@@ -70,7 +70,7 @@ print(Prelude.format('Arguments: %r', __builtins__.Environment.Arguments));
 print(Prelude.format('LibraryPath: %s', __builtins__.Environment.LibraryPath));
 print(Prelude.format('StartupDirectory: %s', __builtins__.Environment.StartupDirectory));
 }}}
-Then run {{{JSH.js hello.js a b c}}} under command prompt to see the result.<br>
+Then run *{{{JSH.js hello.js a b c}}}* under command prompt to see the result.<br>
 You may also run *{{{JSH.hta hello.js a b c}}}* to see the result in HTA window.<br>
 
 === Windows console stdin/stdout redirection ===
