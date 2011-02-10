@@ -75,4 +75,27 @@ Then run *{{{JSH.js hello.js a b c}}}* under command prompt to see the result.<b
 You may also run *{{{JSH.hta hello.js a b c}}}* to see the result in HTA window.<br>
 
 === Windows console stdin/stdout redirection ===
-[http://support.microsoft.com/kb/321788]
+If you are facing problems while trying to use JSH for stdin/stdout redirection, consult this link [http://support.microsoft.com/kb/321788].<br>
+For example, if we want to create a script for automating HTTP request
+{{{
+Tartarus.load(
+	__builtins__.Runtime('lib/Intermezzo.js'),
+function(){
+	var method = 'GET', URL, xmlHttpReq = Intermezzo.XMLHttpRequest();
+	switch(__builtins__.Environment.Arguments.length){
+	case 2:
+		URL = __builtins__.Environment.Arguments[1];
+		break;
+	case 3:
+		method = __builtins__.Environment.Arguments[1];
+		URL = __builtins__.Environment.Arguments[2];
+		break;
+	default:
+		Tartarus.print(Prelude.format('Usage: %s [GET | POST] <URL>' , __builtins__.Environment.Arguments[0]));
+		exit();
+	}
+	xmlHttpReq.open(method, URL, false);
+	xmlHttpReq.send(method === 'POST' ? __builtins__.Environment.StdIn.ReadAll() : undefined);
+	Tartarus.print(xmlHttpReq.responseText);
+});
+}}}
