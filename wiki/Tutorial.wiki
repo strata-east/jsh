@@ -48,6 +48,6 @@ If your operating system is Windows based, you may start directly by double clic
 === Run in Windows console ===
 If your operating system is Windows based, you can run *JSH.js* in console using *cscript.exe /nologo <JSH.js file path>*, for example:<br>
 {{{
-cscript.exe /nologo D:\www\JSH.js
+cscript.exe /nologo D:\WWW\JSH.js
 }}}
 <img src="http://jsh.googlecode.com/files/jsh_win32console.png" /><br>
