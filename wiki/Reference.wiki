@@ -3,6 +3,6 @@
 = Library Organization =
 
 = JSH Runtime =
-All JSH related data are kept in the *__builtins__* global variable.<br>
+All JSH related data are kept in the *{{{__builtins__}}}* global variable.<br>
 
 = Library API =
