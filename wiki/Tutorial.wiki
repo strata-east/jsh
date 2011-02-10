@@ -43,8 +43,6 @@ If you are running locally and using Internet Explorer, the browser may show an 
 If your operating system is Windows based, you may start directly by double clicking the *JSH.hta* file icon, this would bring you an HTA based shell.<br>
 <img src="http://jsh.googlecode.com/files/jsh_hta.png" /><br>
 
-= Advanced Topic =
-
 === Run in Windows console ===
 If your operating system is Windows based, you can run *JSH.js* in console using *cscript.exe /nologo <JSH.js file path>*, for example:
 {{{
@@ -57,3 +55,7 @@ wscript.exe //H:CScript
 This would allow you to run *JSH.js* directly either by double clicking the JSH.js file icon, or by typing {{{JSH.js}}} directly as illustrated below.<br>
 (if you are too lazy to type in the *.js*, you may add *.js* to the PATHEXT environment variable, then you just need to type the three letter *JSH*...)
 <img src="http://jsh.googlecode.com/files/jsh_win32console.png" /><br>
+
+= Advanced Topic =
+
+=== Windows console stdin/stdout redirection ===
