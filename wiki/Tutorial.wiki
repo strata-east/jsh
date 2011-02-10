@@ -32,7 +32,7 @@ jsh
 
 === Run in browser ===
 Open *index.htm* locally in your favorite browser and play with it, you may also deploy the entire *jsh* folder to a web server.<br>
-[http://jsh.googlecode.com/files/jsh_chrome.png]
+[http://jsh.googlecode.com/files/tutorial1.png]
 When *index.htm* is opened locally, *Needle (bookmark)* may not work due to browser security policy. If you are using latter version of Internet Explorer, the browser may show an information bar asking if the active content should be executed.<br>
 
 === Run in Windows HTA ===
