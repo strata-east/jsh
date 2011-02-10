@@ -35,8 +35,9 @@ Open *index.htm* locally in your favorite browser and play with it, you may also
 Once you are done, you will see something similar as illustrated.<br>
 Now there are three panels, click the *Runtime Library* link, which is the last item in the left panel, and you will see a prompt at the right panel as illustrated, now you can type in javascript expressions and statements and see the result.<br>
 <br>
-[http://jsh.googlecode.com/files/tutorial1.png]
-When *index.htm* is opened locally, *Needle (bookmark)* may not work due to browser security policy. If you are using latter version of Internet Explorer, the browser may show an information bar asking if the active content should be executed.<br>
+[http://jsh.googlecode.com/files/tutorial1.png]<br>
+*Needle (bookmark)* can be saved as a bookmark and used on other web pages, this is done by injecting javascript code to current web page. Note that when *index.htm* is opened locally, *Needle (bookmark)* may not work due to browser security policy.<br>
+If you are using latter version of Internet Explorer, the browser may show an information bar asking if the active content should be executed.<br>
 
 === Run in Windows HTA ===
 If your operating system is Windows based, you may start directly by double clicking the *JSH.hta* file icon, this would bring you a HTA based shell.
