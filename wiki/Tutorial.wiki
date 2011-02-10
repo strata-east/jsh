@@ -50,4 +50,4 @@ If your operating system is Windows based, you can run *JSH.js* in console using
 {{{
 cscript.exe /nologo D:\www\JSH.js
 }}}
-<img src="http://jsh.googlecode.com/files/jsh_hta.png" /><br>
+<img src="http://jsh.googlecode.com/files/jsh_win32console.png" /><br>
