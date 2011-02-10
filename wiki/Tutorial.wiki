@@ -46,8 +46,13 @@ If your operating system is Windows based, you may start directly by double clic
 = Advanced Topic =
 
 === Run in Windows console ===
-If your operating system is Windows based, you can run *JSH.js* in console using *cscript.exe /nologo <JSH.js file path>*, for example:<br>
+If your operating system is Windows based, you can run *JSH.js* in console using *cscript.exe /nologo <JSH.js file path>*, for example:
 {{{
 cscript.exe /nologo D:\WWW\JSH.js
 }}}
+In order to run *JSH.js* without having to type *cscript.exe /nologo* each time, you can change the default scripting host by the following command:
+{{{
+wscript.exe //H:CScript
+}}}
+This would allow you to run *JSH.js* directly either by double clicking the JSH.js file icon, or by typing {{{JSH.js}}} directly as illustrated below.<br>
 <img src="http://jsh.googlecode.com/files/jsh_win32console.png" /><br>
