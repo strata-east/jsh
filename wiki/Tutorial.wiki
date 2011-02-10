@@ -99,4 +99,7 @@ function(){
 	Tartarus.print(xmlHttpReq.responseText);
 });
 }}}
-Then it is possible to use *{{{JSH.js HttpClient.js POST http://google.com < postdata.txt}}}*
+Then it is possible to use command like:<br>
+*{{{JSH.js HttpClient.js POST http://google.com < postdata.txt}}}*<br>
+*{{{JSH.js HttpClient.js GET http://google.com > result.txt}}}*<br>
+*{{{echo hello | JSH.js HttpClient.js POST http://google.com}}}*<br>
