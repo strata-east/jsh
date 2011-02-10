@@ -1,8 +1,6 @@
 = Introduction =
 
 
-= Details =
-
 Download the jsh.7z package and unpack, and you will see the following directory structure.
 {{{
 jsh
@@ -34,8 +32,10 @@ jsh
 
 === Run in browser ===
 Open *index.htm* locally in your favorite browser and play with it, you may also deploy the entire *jsh* folder to a web server.<br>
-When *index.htm* is opened locally, *Needle (bookmark)* may not work due to browser security policy. If you are using latter version of Internet Explorer, the browser may show an information bar asking if the active content should be executed.<br>
 
+When *index.htm* is opened locally, *Needle (bookmark)* may not work due to browser security policy. If you are using latter version of Internet Explorer, the browser may show an information bar asking if the active content should be executed.<br>
 
 === Run in Windows HTA ===
 If your operating system is Windows based, you may start directly by double clicking the *JSH.hta* file icon, this would bring you a HTA based shell.
+
+= Details =
