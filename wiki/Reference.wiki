@@ -4,5 +4,6 @@
 
 = JSH Runtime =
 All JSH related data are kept in the *{{{__builtins__}}}* global variable.<br>
-*{{{__builtins__.Engine}}}* string value
+*{{{__builtins__.Engine}}}* _string_
+*{{{__builtins__.Environment}}}* _object_
 = Library API =
