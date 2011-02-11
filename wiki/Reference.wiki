@@ -160,6 +160,11 @@ Base64.Encode("abc");
 {{{
 Base64.Decode('SGVsbG8sIHdvcmxkIQ==');
 }}}
+
+=== LZW ===
+*{{{Compress(string)}}}*<br>
+*{{{Decompress(string)}}}*<br>
+
 === UTF8 ===
 *{{{Encode(string)}}}*<br>
 *{{{Decode(string)}}}*<br>
