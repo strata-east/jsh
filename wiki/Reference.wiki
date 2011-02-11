@@ -137,7 +137,17 @@ Tartarus.print(Tartarus);
 
 === URI ===
 *{{{GetCurrentURI()}}}*<br>
-*{{{NormalizeURI(string, [string])}}}*<br>
+*{{{NormalizeURI(String uri, [String base])}}}*<br>
+{{{
+URI.NormalizeURI('HTTP://User:Password@WWW.TEST.ORG:00080#a');
+URI.NormalizeURI('http://www.test.org/a/../b/../c');
+URI.NormalizeURI('http://www.test.org/a/../b/../c');
+URI.NormalizeURI('a.js', 'http://localhost');
+URI.NormalizeURI('/a.htm', 'http://localhost/hello/world/');
+URI.NormalizeURI('../a.htm', 'http://localhost/hello/world/');
+URI.NormalizeURI('mailto:guy@gmail.com', 'http://localhost');
+URI.NormalizeURI('a/b', 'file:///c/d');
+}}}
 *{{{ParseURI(string)}}}*<br>
 
 === Base64 ===
