@@ -116,6 +116,17 @@ print(Prelude.format('StartupDirectory: %s', __builtins__.Environment.StartupDir
 Then run *{{{JSH.js hello.js a b c}}}* under command prompt to see the result.<br>
 You may also run *{{{JSH.hta hello.js a b c}}}* to see the result in HTA window.<br>
 
+=== Returning error code (Windows console) ===
+Create a file named _{{{exit.js}}}_ as follows, and run *{{{JSH.js exit.js}}}*.
+{{{
+Prelude.infect();
+infect(globals(), Tartarus);
+
+print('check if exit code in %errorlevel% is 3');
+exit(3);
+print('unreachable code');
+}}}
+
 === Windows console stdin/stdout redirection ===
 If you are facing problems while trying to use JSH for stdin/stdout redirection, consult this link [http://support.microsoft.com/kb/321788].<br>
 For example, if we want to create a script for automating HTTP request, we can create a script named _{{{HttpClient.js}}}_
