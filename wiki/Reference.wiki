@@ -31,8 +31,9 @@ When running in interactive mode, an additional global variable named *`_`* _(a 
 
 === `.` commands ===
 These are also known as meta commands, available when running interactively in browser and HTA.<br>
-*{{{.history}}}*<br>
-*{{{.wrap}}}*
+*{{{.cls}}}*      (clear output)<br>
+*{{{.history}}}*     (show command history)<br>
+*{{{.wrap}}}*      (toggle output wrapping)
 
 = Library API =
 === Tartarus ===
