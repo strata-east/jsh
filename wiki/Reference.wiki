@@ -39,8 +39,12 @@ These are also known as meta commands, available when running interactively in b
 
 = Library API =
 === Tartarus ===
-*{{{chainload}}}*<br>
-*{{{load}}}*<br>
-*{{{print}}}*<br>
+*{{{chainload(...)}}}*<br>
+load scripts one by one in the given order, if the argument is a Function instead of script name String, execute the function instead.<br>
+{{{
+chainload('http://localhost/sample.js', './script.js', function(){alert('hello');});
+}}}
+*{{{load(...)}}}*<br>
+*{{{print(...)}}}*<br>
 
 === Prelude ===
