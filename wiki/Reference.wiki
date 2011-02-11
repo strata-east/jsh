@@ -43,11 +43,16 @@ These are also known as meta commands, available when running interactively in b
 load scripts one by one in the given order, if the argument is a Function instead of script name String, execute the function instead.<br>
 {{{
 Tartarus.chainload(
+	'http://localhost/script1.js',
+	'script2.js',
+	'../script3.js');
+
+Tartarus.chainload(
 	function(){Tartarus.print('Load the first script...');},
 	'http://localhost/sample.js',
 	function(){Tartarus.print('Load the second script...');},
 	'./script.js',
-	function(){Tartarus.print('Done');})
+	function(){Tartarus.print('Done');});
 }}}
 *{{{load(...)}}}*<br>
 similar to _{{{Tartarus.chainload}}}_, but load the scripts concurrently.<br>
