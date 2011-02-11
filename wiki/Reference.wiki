@@ -136,6 +136,20 @@ Tartarus.print(Tartarus);
 *{{{XMLHttpRequest}}}*<br>
 
 === URI ===
-*{{{GetCurrentURI}}}*<br>
-*{{{NormalizeURI}}}*<br>
-*{{{ParseURI}}}*<br>
+*{{{GetCurrentURI()}}}*<br>
+*{{{NormalizeURI(string, [string])}}}*<br>
+*{{{ParseURI(string)}}}*<br>
+
+=== Base64 ===
+*{{{Encode(string)}}}*<br>
+*{{{Decode(string)}}}*<br>
+
+=== UTF8 ===
+*{{{Encode(string)}}}*<br>
+*{{{Decode(string)}}}*<br>
+
+=== UTF16 ===
+*{{{Encode(string, String pack, [Boolean bom])}}}*<br>
+pack can be "BE" (big endian) or "LE" (little endian)<br>
+bom can be true of false, if set to true, a BOM header will be included.<br>
+*{{{Decode(string, pack)}}}*<br>
