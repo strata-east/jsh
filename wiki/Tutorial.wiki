@@ -145,3 +145,27 @@ Then it is possible to use command like:<br>
 *{{{JSH.js HttpClient.js POST http://google.com < postdata.txt}}}*<br>
 *{{{JSH.js HttpClient.js GET http://google.com > result.txt}}}*<br>
 *{{{echo hello | JSH.js HttpClient.js POST http://google.com}}}*<br>
+
+=== Internet Explorer Automation ===
+You can create a script named _{{{JshWeb.js}}}_ for automating Internet Explorer, and run *{{{JSH.hta JshWeb.js}}}* or *{{{JSH.js JshWeb.js}}}*.
+{{{
+if(this.__builtins__ && (__builtins__.Engine === 'CScript' || __builtins__.Engine === 'HTA')){
+	Tartarus.load(
+		__builtins__.Runtime('bin/WebAutomation.js'),
+		__builtins__.Runtime('lib/Intermezzo.js'),
+	function(){
+		var browser = WebAutomation.InternetExplorer('about:');
+		browser.navigate('about:blank');
+		WebAutomation.Wait(browser);
+		Prelude.map(function(module){
+			browser.Document.parentWindow.execScript(module.OpenAsTextStream().ReadAll());
+		}, [
+			System.GetFile(__builtins__.Runtime('lib/Tartarus.js')),
+			System.GetFile(__builtins__.Runtime('lib/Prelude.js')),
+			System.GetFile(__builtins__.Runtime('lib/Intermezzo.js')),
+			System.GetFile(__builtins__.Runtime('lib/URI.js')),
+			System.GetFile(__builtins__.Runtime('JSH.js'))
+		]);
+	});
+}
+}}}
