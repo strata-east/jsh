@@ -142,8 +142,14 @@ Tartarus.print(Tartarus);
 
 === Base64 ===
 *{{{Encode(string)}}}*<br>
+{{{
+Base64.Encode('Hello, world!')
+Base64.Encode("abc");
+}}}
 *{{{Decode(string)}}}*<br>
-
+{{{
+Base64.Decode('SGVsbG8sIHdvcmxkIQ==');
+}}}
 === UTF8 ===
 *{{{Encode(string)}}}*<br>
 *{{{Decode(string)}}}*<br>
