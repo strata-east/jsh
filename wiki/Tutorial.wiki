@@ -39,6 +39,7 @@ Hello, JSH!
 ['chainload', 'load', 'print']
 >>> load('lib/URI.js')
 >>> dir(URI)
+['GetCurrentURI', 'NormalizeURI', 'ParseURI']
 >>> load('lib/LZW.js')
 >>> LZW.Compress('aaaaaaaaaaaaaaaaaaaaaaaaaaa').length
 8
@@ -65,6 +66,7 @@ Once you are done, you will see something similar as illustrated below.<br>
 Now there are three panels, click the *Runtime Library* link, which is the last item in the left panel, and you will see a prompt at the right panel as illustrated, now you can type in javascript expressions and statements and see the result.<br>
 Three meta commands are supported, *{{{.cls}}}* would clear the output, *{{{.history}}}* would show the command history, and *{{{.wrap}}}* would toggle the line wrapping mode.<br>
 You may also use the up and down arrow key to navigate through the command history.<br>
+If you are using a high DPI monitor, you may change the font size of the output using *{{{__builtins__.Environment.StdOut.style.fontSize = '18px'}}}*, choose the appropriate typeface and size will make you more effective:)<br>
 <br>
 <img src="http://jsh.googlecode.com/files/tutorial1.png" /><br>
 *Needle (bookmark)* can be saved as a bookmark and used on other web pages, this is done by injecting javascript code to current web page. Note that when _index.htm_ is opened locally, _Needle (bookmark)_ may not work due to browser security policy.<br>
