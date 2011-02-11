@@ -50,6 +50,23 @@ Tartarus.chainload(
 	function(){Tartarus.print('Done');})
 }}}
 *{{{load(...)}}}*<br>
+similar to _{{{Tartarus.chainload}}}_, but load the scripts concurrently.<br>
+if the last argument is a Function, this function will be executed only when all the scripts are loaded.<br>
+{{{
+Tartarus.load(
+	'../lib/Prelude.js',
+	'../lib/Intermezzo.js',
+	'../lib/URI.js',
+function(){
+	Tartarus.print(Prelude.dir(URI));,
+});
+}}}
 *{{{print(...)}}}*<br>
+output in a proper manner.<br>
+{{{
+Tartarus.print('Hello, world!');
+Tartarus.print(1, 2, 3, [4, 5, 6], undefined, null);
+Tartarus.print(Tartarus);
+}}}
 
 === Prelude ===
