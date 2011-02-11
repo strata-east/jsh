@@ -34,7 +34,7 @@ jsh
 The simple way is to open *index.htm* locally in your favorite browser and play with it. However, in order to use script injection and many network related features, you may want to host the entire *jsh* folder on a web server.<br>
 Once you are done, you will see something similar as illustrated below.<br>
 Now there are three panels, click the *Runtime Library* link, which is the last item in the left panel, and you will see a prompt at the right panel as illustrated, now you can type in javascript expressions and statements and see the result.<br>
-Three meta commands are supported, *{{{.cls}}} would clear the output, *{{{.history}}}* would show the command history, and *{{{.wrap}}}* would toggle the line wrapping mode.<br>
+Three meta commands are supported, *{{{.cls}}}* would clear the output, *{{{.history}}}* would show the command history, and *{{{.wrap}}}* would toggle the line wrapping mode.<br>
 You may also use the up and down arrow key to navigate through the command history.<br>
 <br>
 <img src="http://jsh.googlecode.com/files/tutorial1.png" /><br>
