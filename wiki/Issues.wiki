@@ -1,5 +1,7 @@
 === Known Issues ===
 There are found during the development, most of them are caused by bugs in browser, script engine or the limitation of language design, and do not have a tidy workaround.<br>
- * {{{TAB character may not display correctly in Windows Internet Explorer and HTA. (Trident implementation behavior)}}}<br>
+ * {{{
+TAB character may not display correctly in Windows Internet Explorer and HTA. (Trident implementation behavior)
+}}}<br>
  * {{{Variable definition does not work. (ECMAScript eval behavior)}}}<br>
  * {{{String assignments may not work correctly, if the source string contains NUL character. (Trident behavior)}}}<br>
