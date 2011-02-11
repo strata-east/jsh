@@ -30,6 +30,35 @@ jsh
     UTF8.js
 }}}
 
+Now you need to decide in which environment you would like to run *jsh*, the options are browser, console, HTA, as explained below.<br>
+After you launch *jsh* interactively, you can start by playing with the shell.<br>
+{{{
+>>> Tartarus.print("Hello, JSH!")
+Hello, JSH!
+>>> dir(Tartarus)
+['chainload', 'load', 'print']
+>>> load('lib/URI.js')
+>>> dir(URI)
+>>> load('lib/LZW.js')
+>>> LZW.Compress('aaaaaaaaaaaaaaaaaaaaaaaaaaa').length
+8
+>>> add(1, 2, 3, 4, 5)
+15
+>>> add.apply(null, range(101))
+5050
+>>> comp(add)(range(101))
+5050
+>>> inc = curry(add, 1)
+<lambda/0>
+>>> inc(5)
+6
+>>> range(10)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> map(inc, _)
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> exit()
+}}}
+
 === Run in browser ===
 The simple way is to open *index.htm* locally in your favorite browser and play with it. However, in order to use script injection and many network related features, you may want to host the entire *jsh* folder on a web server.<br>
 Once you are done, you will see something similar as illustrated below.<br>
