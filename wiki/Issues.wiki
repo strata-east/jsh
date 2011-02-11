@@ -20,5 +20,5 @@ TypeError: 'x' is undefined
 'a'
 
 /* workaround */
-Tartarus.print(Prelude.repr(x));
+>>> Tartarus.print(Prelude.repr(x));
 }}}
