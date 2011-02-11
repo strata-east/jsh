@@ -15,3 +15,10 @@ TypeError: 'x' is undefined
 >>> Tartarus.print(x);
 }}}
  * {{{String assignments may not work correctly, if the source string contains NUL character. (Trident behavior)}}}<br>
+{{{
+>>> x = 'a\0b'
+'a'
+
+/* workaround */
+Tartarus.print(Prelude.repr(x));
+}}}
