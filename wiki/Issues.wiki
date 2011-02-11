@@ -2,7 +2,8 @@
 There are found during the development, most of them are caused by bugs in browser, script engine or the limitation of language design, and do not have a tidy workaround.<br>
  * {{{TAB character may not display correctly in Internet Explorer and HTA. (Trident implementation behavior)}}}<br>
 {{{
-Tartarus.print('a\tb'); /* not work correctly in IE */
+>>> Tartarus.print('a\tb'); /* not work correctly in IE */
+ab
 }}}
  * {{{Variable definition does not work when running interactively in browser and HTA. (ECMAScript eval behavior)}}}<br>
 {{{
@@ -13,6 +14,7 @@ TypeError: 'x' is undefined
 /* workaround */
 >>> x = 1;
 >>> Tartarus.print(x);
+1
 }}}
  * {{{String assignments may not look correctly in Internet Explorer, if the source string contains NUL character. (Trident behavior)}}}<br>
 {{{
