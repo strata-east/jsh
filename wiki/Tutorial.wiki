@@ -33,6 +33,12 @@ jsh
 Now you need to decide in which environment you would like to run _jsh_, the options are browser, console, HTA, as explained below.<br>
 After you launch *jsh* interactively, you can start by playing with the shell.<br>
 {{{
+>>> 1
+1
+>>> _ + _
+2
+>>> _ + _
+4
 >>> Tartarus.print("Hello, JSH!")
 Hello, JSH!
 >>> dir(Tartarus)
