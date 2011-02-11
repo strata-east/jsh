@@ -30,7 +30,7 @@ jsh
     UTF8.js
 }}}
 
-Now you need to decide in which environment you would like to run *jsh*, the options are browser, console, HTA, as explained below.<br>
+Now you need to decide in which environment you would like to run _jsh_, the options are browser, console, HTA, as explained below.<br>
 After you launch *jsh* interactively, you can start by playing with the shell.<br>
 {{{
 >>> Tartarus.print("Hello, JSH!")
