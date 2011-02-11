@@ -66,7 +66,7 @@ The first way is to deploy *jsh* on a web server, bookmark the *Needle (bookmark
 The second way is only available for Trident on Windows platform, by using the *main.exe* application (C++ source available), this would give you the ability to inject script to Trident engine based applications, such like Windows SDK Help, MSN Live Messenger, Outlook Express, etc.<br>
 
 === Taking arguments (Windows HTA and console) ===
-Create a file named _hello.js_ as follows
+Create a file named _{{{hello.js}}}_ as follows
 {{{
 var print = Tartarus.print;
 
