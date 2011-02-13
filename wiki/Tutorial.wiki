@@ -103,6 +103,19 @@ Script injection can be achieved in two ways.<br>
 The first way is to deploy *jsh* on a web server, bookmark the *Needle (bookmark)* and run it on targeted web pages.<br>
 The second way is only available for Trident on Windows platform, by using the *main.exe* application (C++ source available), this would give you the ability to inject script to Trident engine based applications, such like Windows SDK Help, MSN Live Messenger, Outlook Express, etc.<br>
 
+=== Chain load (browser and Windows HTA) ===
+Take *Firebug Lite* as an example, from the official site we can get the bookmark for firebug lite injection. However, this bookmark does not work for _FRAME_ and _IFRAME_, neither does it support HTA and things like Windows Live Messenger.<br>
+Once we have _jsh_ injected, jsh will allow you to evaluate expressions and execute statements, and thus makes it possible to load libraries or any other third party scripts. For this case we will firstly check the bookmark for _Firebug Lite_, and extract the statement:<br>
+{{{
+>>> /* copy & paste the firebug lite bookmark into the double quote as follows */
+>>> firebug_lite_bookmark = "javascript:(function(...){...})(...);";
+>>> /* decode and evaluate */
+>>> eval(decodeURIComponent(firebug_lite_bookmark.slice(11)));
+>>> /* now wait a few seconds for firebug lite to load */
+>>> /* enjoy :) */
+}}}
+
+
 === Taking arguments (Windows HTA and console) ===
 Create a file named _{{{hello.js}}}_ as follows
 {{{
