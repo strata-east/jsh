@@ -1,7 +1,7 @@
 #labels Featured,Phase-Support
 = Getting Started =
 
-Download the *jsh.7z* package and unpack, and you will see the following directory structure.
+Download the *jsh.7z* or *jsh.zip* package and unpack, and you will see the following directory structure.
 {{{
 jsh
 │ JSH.js
