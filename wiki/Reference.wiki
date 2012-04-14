@@ -201,5 +201,5 @@ Prelude.list(UTF16.Encode('Frédéric Chopin', 'LE', true));
 }}}
 *{{{Decode(string, pack)}}}*<br>
 {{{
-UTF16.Decode(UTF16.Encode('Hello, world!', 'BE'), 'BE')
+UTF16.Decode(UTF16.Encode('Hello, world!', 'BE'), 'BE');
 }}}
