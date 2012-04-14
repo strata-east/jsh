@@ -174,14 +174,32 @@ Base64.Decode('SGVsbG8sIHdvcmxkIQ==');
 
 === LZW ===
 *{{{Compress(string)}}}*<br>
+{{{
+LZW.Compress('Hello, woooooooooooooooooooooooooooooooooooooorld!');
+}}}
 *{{{Decompress(string)}}}*<br>
+{{{
+LZW.Decompress('H2\x9b\r\x86\xf1`\x80\xeeo\x84BaP\xb8d6\x1d\b9\x1b\x0c\x82\x10');
+}}}
 
 === UTF8 ===
 *{{{Encode(string)}}}*<br>
+{{{
+UTF8.Encode('Frédéric Chopin');
+}}}
 *{{{Decode(string)}}}*<br>
+{{{
+UTF8.Decode('Fr\xc3\xa9d\xc3\xa9ric Chopin')
+}}}
 
 === UTF16 ===
 *{{{Encode(string, String pack, [Boolean bom])}}}*<br>
 pack can be "BE" (big endian) or "LE" (little endian)<br>
 bom can be true of false, if set to true, a BOM header will be included.<br>
+{{{
+Prelude.list(UTF16.Encode('Frédéric Chopin', 'LE', true));
+}}}
 *{{{Decode(string, pack)}}}*<br>
+{{{
+UTF16.Decode(UTF16.Encode('Hello, world!', 'BE'), 'BE')
+}}}
