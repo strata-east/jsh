@@ -164,7 +164,7 @@ AES.Decrypt('j\xac\xf3\xb06\x01!0!!0!-,\x8e\xc5\xbc\x8eZ/>\xc0\x18\xb4X\xe5', 'q
 === Base64 ===
 *{{{Encode(string)}}}*<br>
 {{{
-Base64.Encode('Hello, world!')
+Base64.Encode('Hello, world!');
 Base64.Encode("abc");
 }}}
 *{{{Decode(string)}}}*<br>
