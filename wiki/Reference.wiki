@@ -174,13 +174,22 @@ Intermezzo.DomTraveler(document, function(elem, level){
 });
 }}}
 *{{{GetComputedStyle}}}*<br>
+{{{
+Intermezzo.GetComputedStyle(document.body).backgroundColor;
+}}}
 *{{{GetSelectedText}}}*<br>
 *{{{Hypertext}}}*<br>
 {{{
 Intermezzo.Hypertext('<Hello, world!>');
 }}}
 *{{{Navigate}}}*<br>
+{{{
+Intermezzo.Navigate('about:blank');
+}}}
 *{{{ParseXML}}}*<br>
+{{{
+Intermezzo.ParseXML('<test>Hello, world!</test>').getElementsByTagName('test');
+}}}
 *{{{RegisterGlobalExceptionHandler}}}*<br>
 *{{{RemoveEventListener}}}*<br>
 *{{{RemoveNode}}}*<br>
