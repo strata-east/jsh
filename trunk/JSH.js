@@ -4,7 +4,10 @@ else{
 	this.WScript = new(function(){
 		var _ = this;
 		var global = Prelude.globals();
-		var Console = Prelude.proto(new(function(){
+		var Console = Prelude.proto(function(style){
+			if(style)
+				this.style = Prelude.infect(style, this.style);
+		}, function(){
 			var _ = this;
 			_.style = {
 				borderWidth: '0px',
@@ -36,9 +39,6 @@ else{
 				text.pop();
 				Prelude.map(function(x){x && Intermezzo.AppendNode(_.node, x);}, text);
 			};
-		}))(function(style){
-			if(style)
-				this.style = Prelude.infect(style, this.style);
 		});
 		if(global.HTA){
 			_.FakeArguments = System.CommandLineToArgv(global.HTA.commandLine);
@@ -110,10 +110,10 @@ var __builtins__ = new(function(){
 		if($error.name === 'SystemExit')
 			__builtins__.SystemExit = $error.constructor;
 		else
-			__builtins__.SystemExit = Prelude.proto(new Error)(function(n){
+			__builtins__.SystemExit = Prelude.proto(function(n){
 				this.name = 'SystemExit';
 				this.number = n || 0;
-			});
+			}, Error);
 	}
 	if(__builtins__.Engine === 'CScript' || __builtins__.Engine === 'WScript' || __builtins__.Engine === 'HTA')
 		__builtins__.System = System;
@@ -176,7 +176,7 @@ Prelude.infect(Prelude.globals(), Tartarus);
 Prelude.globals()._ = function(_){return _;}();
 
 if(__builtins__.Engine === 'CScript'){
-	__builtins__.InputCancled = Prelude.proto(new Error)(function(){});
+	__builtins__.InputCancled = Prelude.proto(function(){}, Error);
 	__builtins__.Environment.StdLog.Write(__builtins__.Environment.Prompt);
 	while(!__builtins__.Environment.StdIn.AtEndOfStream){
 		try{
