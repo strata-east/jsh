@@ -150,8 +150,7 @@ Intermezzo.AppendNode(document.body,
 		['DD', null, 'technically bright but socially inept person'],
 		['DT', null, 'Center'],
 		['DT', null, 'Centre'],
-		['DD', null, 'A point equidistant from all points on the surface of a sphere.'],
-		['DD', null, 'In some field sports, the player who holds the middle position on the field, court, or forward line.']]
+		['DD', null, 'A point equidistant from all points on the surface of a sphere.']]
 );
 }}}
 *{{{DomTraveler}}}*<br>
