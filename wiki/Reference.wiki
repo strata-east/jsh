@@ -189,7 +189,7 @@ UTF8.Encode('Frédéric Chopin');
 }}}
 *{{{Decode(string)}}}*<br>
 {{{
-UTF8.Decode('Fr\xc3\xa9d\xc3\xa9ric Chopin')
+UTF8.Decode('Fr\xc3\xa9d\xc3\xa9ric Chopin');
 }}}
 
 === UTF16 ===
