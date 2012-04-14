@@ -176,11 +176,17 @@ Intermezzo.DomTraveler(document, function(elem, level){
 *{{{GetComputedStyle}}}*<br>
 *{{{GetSelectedText}}}*<br>
 *{{{Hypertext}}}*<br>
+{{{
+Intermezzo.Hypertext('<Hello, world!>');
+}}}
 *{{{Navigate}}}*<br>
 *{{{ParseXML}}}*<br>
 *{{{RegisterGlobalExceptionHandler}}}*<br>
 *{{{RemoveEventListener}}}*<br>
 *{{{RemoveNode}}}*<br>
+{{{
+Prelude.map(Intermezzo.RemoveNode, document.getElementsByTagName('SPAN'));
+}}}
 *{{{XMLHttpRequest}}}*<br>
 
 === URI ===
