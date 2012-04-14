@@ -20,6 +20,7 @@ jsh
 │   resource.js
 │   resources.rc
 └─lib
+    AES.js
     Base64.js
     Intermezzo.js
     LZW.js
