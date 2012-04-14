@@ -191,6 +191,9 @@ Prelude.map(Intermezzo.RemoveNode, document.getElementsByTagName('SPAN'));
 
 === URI ===
 *{{{GetCurrentURI()}}}*<br>
+{{{
+Tartarus.print(URI.GetCurrentURI());
+}}}
 *{{{NormalizeURI(String uri, [String base])}}}*<br>
 {{{
 URI.NormalizeURI('HTTP://User:Password@WWW.TEST.ORG:00080#a');
@@ -203,6 +206,9 @@ URI.NormalizeURI('mailto:guy@gmail.com', 'http://localhost');
 URI.NormalizeURI('a/b', 'file:///c/d');
 }}}
 *{{{ParseURI(string)}}}*<br>
+{{{
+URI.ParseURI(URI.GetCurrentURI())['scheme'];
+}}}
 
 === AES ===
 *{{{Encrypt(string, string password, [int bits])}}}*<br>
