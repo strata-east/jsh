@@ -127,6 +127,14 @@ Tartarus.print(Tartarus);
 *{{{AppendNode}}}*<br>
 {{{
 Intermezzo.AppendNode(document.body,
+	['A', {href: 'http://code.google.com/p/jsh/'}, 'JavaScript Shell']);
+
+Intermezzo.AppendNode(document.body,
+	['DIV', function(elem){
+		elem.style.fontWeight = 'bold';
+	}, 'Hello, world!']);
+
+Intermezzo.AppendNode(document.body,
 	['H3', null, 'Unordered lists (UL), ordered lists (OL), and list items (LI)'],
 	['UL', null,
 		['LI', null, 'Level 1, number 1'],
