@@ -167,6 +167,12 @@ Intermezzo.AppendNode(document.body,
 );
 }}}
 *{{{DomTraveler}}}*<br>
+{{{
+Intermezzo.DomTraveler(document, function(elem, level){
+	if(level && level < 4)
+		Tartarus.print(Prelude.format('%r %s', level, elem.tagName));
+});
+}}}
 *{{{GetComputedStyle}}}*<br>
 *{{{GetSelectedText}}}*<br>
 *{{{Hypertext}}}*<br>
