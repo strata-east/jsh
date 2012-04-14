@@ -125,6 +125,35 @@ Tartarus.print(Tartarus);
 === Intermezzo ===
 *{{{AddEventListener}}}*<br>
 *{{{AppendNode}}}*<br>
+{{{
+Intermezzo.AppendNode(document.body,
+	['H3', null, 'Unordered lists (UL), ordered lists (OL), and list items (LI)'],
+	['UL', null,
+		['LI', null, 'Level 1, number 1'],
+		['LI', null, 'Level 1, number 2'],
+		['LI', null, 'Level 1, number 3']],
+	['OL', null,
+		['LI', null, 'Level 1, number 1'],
+		['LI', null, 'Level 1, number 2'],
+		['LI', null, 'Level 1, number 3']],
+	['H3', null, 'Definition lists: DL, DT and DD'],
+	['DL', null,
+		['DT', null, 'Dweeb'],
+		['DD', null,
+			'young excitable person who may mature into a ',
+			['EM', null, 'Nerd'],
+			' or ',
+			['EM', null, 'Geek']],
+		['DT', null, 'Hacker'],
+		['DD', null, 'a clever programmer'],
+		['DT', null, 'Nerd'],
+		['DD', null, 'technically bright but socially inept person'],
+		['DT', null, 'Center'],
+		['DT', null, 'Centre'],
+		['DD', null, 'A point equidistant from all points on the surface of a sphere.'],
+		['DD', null, 'In some field sports, the player who holds the middle position on the field, court, or forward line.']]
+);
+}}}
 *{{{DomTraveler}}}*<br>
 *{{{GetComputedStyle}}}*<br>
 *{{{GetSelectedText}}}*<br>
