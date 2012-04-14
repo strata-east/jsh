@@ -124,6 +124,11 @@ Tartarus.print(Tartarus);
 
 === Intermezzo ===
 *{{{AddEventListener}}}*<br>
+{{{
+Intermezzo.AddEventListener(document.body, 'click', function(elem){
+	Tartarus.print(elem);
+});
+}}}
 *{{{AppendNode}}}*<br>
 {{{
 Intermezzo.AppendNode(document.body,
