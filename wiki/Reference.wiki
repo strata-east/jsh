@@ -13,6 +13,7 @@ Tartarus.js     (load other libraries, print messages)
 Prelude.js      (fundamental algorithm, data structure and exception)
 Intermezzo.js   (utility for web browser and DOM)
 URI.js          (URI parsing and normalization)
+AES.js          (AES encryption and decryption)
 Base64.js       (Base64 encoding and decoding)
 LZW.js          (LZW compression and decompression)
 UTF8.js         (UTF8 encoding and decoding)
@@ -149,6 +150,16 @@ URI.NormalizeURI('mailto:guy@gmail.com', 'http://localhost');
 URI.NormalizeURI('a/b', 'file:///c/d');
 }}}
 *{{{ParseURI(string)}}}*<br>
+
+=== AES ===
+*{{{Encrypt(string, string password, [int bits])}}}*<br>
+{{{
+AES.Encrypt('Hello, world!', 'qwerty');
+}}}
+*{{{Decrypt(string, string password)}}}*<br>
+{{{
+AES.Decrypt('j\xac\xf3\xb06\x01!0!!0!-,\x8e\xc5\xbc\x8eZ/>\xc0\x18\xb4X\xe5', 'qwerty');
+}}}
 
 === Base64 ===
 *{{{Encode(string)}}}*<br>
