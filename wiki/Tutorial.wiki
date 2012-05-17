@@ -87,7 +87,7 @@ If your operating system is Windows based, you may start directly by double clic
 === Run in Windows console ===
 If your operating system is Windows based, you can run *JSH.js* in console using *{{{cscript.exe /nologo <JSH.js file path>}}}*, for example:
 {{{
-cscript.exe /d /nologo D:\WWW\JSH.js
+cscript.exe /nologo D:\WWW\JSH.js
 }}}
 In order to run _JSH.js_ without having to type _cscript.exe /nologo_ each time, you can change the default scripting host by the following command:
 {{{
